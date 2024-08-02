@@ -1,0 +1,27 @@
+master and slave jenkins
+===============================
+
+jenkins install aon master
+
+java install on both master and slave
+ssh - connection
+cd .ssh
+touch id_rsa.pub
+touch.rsa
+cp authorization_key id_rsa.pub
+copy the entire pem file and paste to the id_rsa
+chmod 400 *
+go to slave and come as ubuntu user and put pwd
+mkdir jenkins
+copy /home/ubuntu/jenkins
+go to the console
+manage jenkins > nodes > lagin ssh
+give slave ip
+add cred > ssh user name > give ubuntu as username and pem file as password
+choose manually trusted verification strategy
+two file come on slave machine remaote and remote.jar
+create a job 
+choose Restrict where this project can be run
+give the label
+apply
+
